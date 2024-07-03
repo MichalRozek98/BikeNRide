@@ -1,0 +1,135 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Business card container */
+.business-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 10px;
+}
+
+#background_image {
+    max-width: 60%;
+    display: block;
+    border-radius: 10%;
+    margin: 0 auto;
+    margin-top: 25px;
+}
+
+.information, .description {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1000px;
+    font-family: Arial, sans-serif;
+}
+
+.description h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.description p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* Header styles */
+.header {
+    background-color: #1abc9c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+}
+
+/* Profile image */
+.header img {
+    width: 180px;
+    height: auto;
+}
+
+/* Heading */
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* Footer styles */
+.footer {
+    text-align: center;
+    background-color: #1abc9c;
+    color: white;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    border-radius: 30px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/* Social links */
+.footer a {
+    color: #0077b5;
+    text-decoration: none;
+    font-size: 25px;
+    transition: color 0.3s;
+    margin-bottom: 15px;
+}
+
+.footer a:hover {
+    color: #1abc9c;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1200px) {
+    /* Adjust styles for larger screens */
+    #background_image{
+        max-width: 65%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjust styles for tablets and smaller screens */
+    .header {
+        flex-direction: column;
+    }
+    .header img {
+        margin-bottom: 10px;
+    }
+    .footer {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .footer a {
+        margin: 5px 0;
+    }
+    #background_image{
+        max-width: 80%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
